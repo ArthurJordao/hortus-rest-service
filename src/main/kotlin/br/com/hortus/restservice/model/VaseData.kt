@@ -7,12 +7,12 @@ import javax.persistence.*
 data class VaseData (
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO)
-        var id: Long?,
+        var id: Long? = null,
         var humidity: Double = 0.0,
         var temperature: Double = 0.0,
         var luminosity: Double = 0.0,
         @ManyToOne
-        var vase: Vase?
+        var vase: Vase? = null
 )
 
 interface VaseDataRepository: JpaRepository<VaseData, Long>

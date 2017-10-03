@@ -7,11 +7,11 @@ import javax.persistence.*
 data class Vase (
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO)
-        var id: Long?,
+        var id: Long? = null,
         @OneToMany(mappedBy = "vase")
         var vaseDatas: List<VaseData> = mutableListOf(),
         @ManyToOne
-        var currentProfile: Profile?
+        var currentProfile: Profile? = null
 )
 
 interface VaseRepository: JpaRepository<Vase, Long>
