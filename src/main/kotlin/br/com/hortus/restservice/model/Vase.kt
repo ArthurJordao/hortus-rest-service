@@ -11,7 +11,7 @@ data class Vase (
         @OneToMany(mappedBy = "vase")
         var vaseDatas: List<VaseData> = mutableListOf(),
         @ManyToOne
-        var currentProfile: Profile? = null
+        var currentPlantProfile: PlantProfile? = null
 )
 
 interface VaseRepository: JpaRepository<Vase, Long>

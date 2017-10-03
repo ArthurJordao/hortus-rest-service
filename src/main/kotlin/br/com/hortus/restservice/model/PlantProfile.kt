@@ -7,7 +7,7 @@ import javax.persistence.GeneratedValue
 import javax.persistence.Id
 
 @Entity
-data class Profile (
+data class PlantProfile(
         @Id
         @GeneratedValue
         var id: Long? = null,
@@ -22,4 +22,4 @@ data class Profile (
         var minLuminosity: Double = 0.0
 )
 
-interface ProfileRepository: JpaRepository<Profile, Long>
+interface PlantProfileRepository: JpaRepository<PlantProfile, Long>
