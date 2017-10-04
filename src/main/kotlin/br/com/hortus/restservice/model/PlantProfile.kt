@@ -7,7 +7,7 @@ import javax.persistence.GeneratedValue
 import javax.persistence.Id
 
 @Entity
-data class PlantProfile(
+class PlantProfile(
         @Id
         @GeneratedValue
         var id: Long? = null,

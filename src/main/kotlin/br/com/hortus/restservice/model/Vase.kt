@@ -4,7 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository
 import javax.persistence.*
 
 @Entity
-data class Vase (
+class Vase (
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO)
         var id: Long? = null,
